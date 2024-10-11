@@ -1,0 +1,6 @@
+# Crear un service account
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: dashboard-admin-sa
+  namespace: kube-system
