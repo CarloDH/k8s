@@ -1,0 +1,14 @@
+# ejemplo de job
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hola-mundo
+spec:
+  schedule: "0 1 * * *"
+  jobTemplate:
+    spec:
+      containers:
+        - name: hola-mundo
+          image: busybox
+          command: ["echo", "Hola Mundo!"]
+      restartPolicy: OnFailure

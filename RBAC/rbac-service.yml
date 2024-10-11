@@ -1,0 +1,6 @@
+# 1. ejemplorbac-rolebinding.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: micuenta
+  namespace: ejemplorbac
